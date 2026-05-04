@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#000000"/>
+
+  <!-- K letter: vertical stroke -->
+  <rect x="7" y="7" width="3.5" height="18" fill="#ffffff"/>
+
+  <!-- K letter: upper diagonal arm -->
+  <polygon points="10.5,16 21,7 25,7 14.5,16" fill="#ffffff"/>
+
+  <!-- K letter: lower diagonal arm -->
+  <polygon points="10.5,16 25,25 21,25 14.5,16" fill="#ffffff"/>
+
+  <!-- Gold dot -->
+  <circle cx="26" cy="24" r="2.8" fill="#C9A84C"/>
+</svg>

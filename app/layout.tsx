@@ -27,9 +27,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kosmo AI — Agencia de Inteligencia Artificial",
+  title: "Kosmo AI",
   description:
     "Páginas web a medida y asistentes de IA en WhatsApp que responden 24/7, califican leads y agendan reuniones.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
