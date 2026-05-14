@@ -45,28 +45,32 @@ export default function Projects() {
           </a>
 
           {/* 2 tall */}
-          <div className="proj-card size-tall">
-            <div className="preview" style={{ background: "radial-gradient(ellipse at center, #2a1010, #050507)" }}>
-              <div className="mock-phone">
-                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#1a0808,#050507)", padding: "30px 14px 14px", display: "flex", flexDirection: "column", gap: "10px" }}>
-                  <div style={{ height: "30px" }} />
-                  <div style={{ fontFamily: "var(--serif)", fontSize: "20px", color: "#fff", letterSpacing: "-0.02em" }}>
-                    Aurora<br /><em style={{ color: "#E8C566", fontWeight: 400, fontSize: "14px" }}>spa & wellness</em>
-                  </div>
-                  <div style={{ height: "80px", background: "linear-gradient(135deg,#3a1a1a,#1a0808)", borderRadius: "8px", marginTop: "8px" }} />
-                  <div style={{ height: "8px", background: "rgba(232,197,102,0.3)", borderRadius: "2px", width: "60%" }} />
-                  <div style={{ height: "6px", background: "rgba(255,255,255,0.1)", borderRadius: "2px" }} />
-                  <div style={{ height: "6px", background: "rgba(255,255,255,0.1)", borderRadius: "2px", width: "80%" }} />
+          <a href="https://clinicasonrisas.vercel.app/" target="_blank" rel="noopener noreferrer" className="proj-card size-tall">
+            <div className="preview" style={{ background: "#f0f8ff" }}>
+              <div className="mock-browser">
+                <div className="bar">
+                  <span className="dot" /><span className="dot" /><span className="dot" />
+                </div>
+                <div className="body" style={{ position: "relative", padding: 0, overflow: "hidden" }}>
+                  <Image
+                    src="/images/projects/sonrisas.jpg"
+                    alt="Clínica Sonrisas"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "top" }}
+                  />
                 </div>
               </div>
             </div>
             <div className="meta">
               <div className="info">
-                <div className="name">Aurora Spa</div>
-                <div className="cat">Mobile · 2025</div>
+                <div className="name">Clínica Sonrisas</div>
+                <div className="cat">Salud · 2026</div>
+              </div>
+              <div className="arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
               </div>
             </div>
-          </div>
+          </a>
 
           {/* 3 small */}
           <div className="proj-card size-small">
