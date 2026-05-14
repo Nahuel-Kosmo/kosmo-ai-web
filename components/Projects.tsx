@@ -46,19 +46,14 @@ export default function Projects() {
 
           {/* 2 tall */}
           <a href="https://clinicasonrisas.vercel.app/" target="_blank" rel="noopener noreferrer" className="proj-card size-tall">
-            <div className="preview" style={{ background: "#f0f8ff" }}>
-              <div className="mock-browser">
-                <div className="bar">
-                  <span className="dot" /><span className="dot" /><span className="dot" />
-                </div>
-                <div className="body" style={{ position: "relative", padding: 0, overflow: "hidden" }}>
-                  <Image
-                    src="/images/projects/sonrisas.jpg"
-                    alt="Clínica Sonrisas"
-                    fill
-                    style={{ objectFit: "cover", objectPosition: "top" }}
-                  />
-                </div>
+            <div className="preview" style={{ background: "#e8f4f8" }}>
+              <div className="mock-phone">
+                <Image
+                  src="/images/projects/sonrisas.jpg"
+                  alt="Clínica Sonrisas"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "top" }}
+                />
               </div>
             </div>
             <div className="meta">
