@@ -28,6 +28,9 @@ yarn-error.log*
 *.pem
 Thumbs.db
 
+# local claude config
+.claude/
+
 # vercel
 .vercel
 

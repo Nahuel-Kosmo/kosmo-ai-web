@@ -217,6 +217,41 @@ export default function Projects() {
               </div>
             </div>
           </div>
+          {/* 9 large — Inmobiliaria Romero */}
+          <a href="https://romeroinmobiliaria.vercel.app/" target="_blank" rel="noopener noreferrer" className="proj-card size-large">
+            <div className="preview" style={{ background: "radial-gradient(ellipse at top left, #221e16, #050507)" }}>
+              <div className="mock-browser">
+                <div className="bar">
+                  <span className="dot" /><span className="dot" /><span className="dot" />
+                </div>
+                <div className="body" style={{ background: "linear-gradient(180deg,#0f0c08,#050507)", display: "flex", flexDirection: "column", padding: "24px", gap: "14px" }}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "32px", color: "#fff", lineHeight: 1, letterSpacing: "-0.02em" }}>
+                    Romero<br /><em style={{ color: "#E8C566", fontWeight: 400 }}>Inmobiliaria</em>
+                  </div>
+                  <div style={{ height: "1px", background: "rgba(232,197,102,0.2)" }} />
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", flex: 1 }}>
+                    <div style={{ background: "linear-gradient(135deg,#2e2718,#100d08)", borderRadius: "6px", display: "flex", alignItems: "flex-end", padding: "8px" }}>
+                      <div style={{ width: "55%", height: "4px", background: "rgba(232,197,102,0.4)", borderRadius: "2px" }} />
+                    </div>
+                    <div style={{ background: "linear-gradient(135deg,#1c1c10,#0a0a06)", borderRadius: "6px" }} />
+                    <div style={{ background: "linear-gradient(135deg,#101a10,#060c06)", borderRadius: "6px" }} />
+                    <div style={{ background: "linear-gradient(135deg,#2a1c0f,#0a0806)", borderRadius: "6px", display: "flex", alignItems: "flex-end", padding: "8px" }}>
+                      <div style={{ width: "70%", height: "4px", background: "rgba(232,197,102,0.25)", borderRadius: "2px" }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="meta">
+              <div className="info">
+                <div className="name">Inmobiliaria Romero</div>
+                <div className="cat">Portfolio · 2026</div>
+              </div>
+              <div className="arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
