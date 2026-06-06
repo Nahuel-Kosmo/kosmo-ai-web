@@ -36,7 +36,7 @@ export default function FAQ() {
       <div className="wrap">
         <div className="faq-grid reveal">
           <div>
-            <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>05 · FAQ</span>
+            <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>04 · FAQ</span>
             <h2 style={{ marginTop: "18px" }}>
               Preguntas<br />
               <span className="serif" style={{ fontStyle: "italic" }}>en <span className="gold-text">órbita</span>.</span>

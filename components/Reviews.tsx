@@ -10,7 +10,7 @@ const reviews = [
 
 function StarIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M12 2l3 7 7 .8-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.8 9 9z" />
     </svg>
   );
@@ -41,7 +41,7 @@ export default function Reviews() {
       <div className="wrap">
         <div className="section-head reveal">
           <div>
-            <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>04 · Reseñas</span>
+            <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>03 · Reseñas</span>
             <h2 style={{ marginTop: "18px" }}>
               Lo que dicen<br />
               <span className="serif" style={{ fontStyle: "italic" }}>quienes <span className="gold-text">confiaron</span>.</span>

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Kosmo AI",
   },
   description:
-    "Agencia de IA para negocios en LATAM. Diseñamos páginas web a medida y chatbots en WhatsApp que responden 24/7, califican leads y agendan reuniones automáticamente.",
+    "Agencia de IA para negocios en LATAM. Páginas web a medida y chatbots en WhatsApp que responden 24/7, califican leads y agendan reuniones.",
   keywords: [
     "agencia inteligencia artificial LATAM",
     "chatbot WhatsApp",

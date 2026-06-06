@@ -5,7 +5,7 @@ export default function CTA() {
     <section className="cta" id="contacto">
       <div className="cta-bg" />
       <div className="cta-content reveal">
-        <span className="eyebrow" style={{ marginBottom: "32px", display: "inline-flex" }}>06 · Contacto</span>
+        <span className="eyebrow" style={{ marginBottom: "32px", display: "inline-flex" }}>05 · Contacto</span>
         <h2 className="cta-title">
           ¿Querés llevar tu<br />
           negocio al <span className="italic gold-text">siguiente nivel</span>?
