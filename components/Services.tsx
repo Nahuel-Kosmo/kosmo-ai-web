@@ -60,7 +60,7 @@ export default function Services() {
             <div>
               <div className="svc-num">01 / Web</div>
               <div className="svc-icon">
-                <svg viewBox="0 0 56 56" fill="none">
+                <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
                   <rect x="4" y="8" width="48" height="36" rx="3" stroke="url(#g1)" strokeWidth="1.4" />
                   <path d="M4 18h48M14 8v10M4 44l14-14 8 8 10-10 16 16" stroke="url(#g1)" strokeWidth="1.4" strokeLinejoin="round" />
                   <rect x="18" y="46" width="20" height="3" rx="1.5" stroke="url(#g1)" strokeWidth="1.4" />
@@ -87,7 +87,7 @@ export default function Services() {
             <div>
               <div className="svc-num">02 / IA</div>
               <div className="svc-icon">
-                <svg viewBox="0 0 56 56" fill="none">
+                <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
                   <circle cx="28" cy="28" r="12" stroke="url(#g2)" strokeWidth="1.4" />
                   <path d="M28 8v6M28 42v6M8 28h6M42 28h6M14.1 14.1l4.2 4.2M37.7 37.7l4.2 4.2M41.9 14.1l-4.2 4.2M18.3 37.7l-4.2 4.2" stroke="url(#g2)" strokeWidth="1.4" strokeLinecap="round" />
                   <circle cx="28" cy="28" r="4" fill="#E8C566" />
@@ -114,7 +114,7 @@ export default function Services() {
             <div>
               <div className="svc-num">03 / Leads</div>
               <div className="svc-icon">
-                <svg viewBox="0 0 56 56" fill="none">
+                <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
                   <path d="M10 46L22 26l8 12 8-18 8 26" stroke="url(#g3)" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round" />
                   <circle cx="22" cy="26" r="3" fill="#E8C566" />
                   <circle cx="30" cy="38" r="3" fill="#E8C566" />
@@ -141,7 +141,7 @@ export default function Services() {
             <div>
               <div className="svc-num">04 / Agenda</div>
               <div className="svc-icon">
-                <svg viewBox="0 0 56 56" fill="none">
+                <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
                   <rect x="6" y="10" width="44" height="40" rx="3" stroke="url(#g4)" strokeWidth="1.4" />
                   <path d="M6 22h44M18 6v8M38 6v8" stroke="url(#g4)" strokeWidth="1.4" />
                   <circle cx="28" cy="36" r="8" stroke="#E8C566" strokeWidth="1.4" />

@@ -13,16 +13,16 @@ export default function Hero() {
           <span className="eyebrow">Agencia de Inteligencia Artificial · Est. 2024</span>
         </div>
         <h1 className="hero-title">
-          <span className="line">Inteligencia que</span>
-          <span className="line italic gold-text">orbita tu negocio.</span>
+          <span className="line">Inteligencia artificial</span>
+          <span className="line italic gold-text">para tu negocio.</span>
         </h1>
         <p className="hero-sub">
-          Diseñamos páginas web a medida y asistentes de IA en WhatsApp que responden, califican leads y agendan reuniones — mientras vos dormís.
+          Diseñamos páginas web a medida y chatbots en WhatsApp que responden 24/7, califican leads y agendan reuniones — mientras vos dormís.
         </p>
         <div className="hero-cta">
           <a href="#contacto" className="btn btn-primary">
             Agendar reunión
-            <svg className="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
           </a>
