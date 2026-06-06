@@ -89,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es-419">
       <body
         className={`${cormorant.variable} ${interTight.variable} ${jetbrainsMono.variable}`}
       >
