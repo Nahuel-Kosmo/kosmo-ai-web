@@ -23,7 +23,12 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div>© 2026 Kosmo AI — Todos los derechos reservados</div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "6px", textAlign: "right" }}>
+        <span style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--gold-2)", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+          Salta, Argentina · Para negocios en LATAM
+        </span>
+        <span>© 2026 Kosmo AI — Todos los derechos reservados</span>
+      </div>
     </footer>
   );
 }

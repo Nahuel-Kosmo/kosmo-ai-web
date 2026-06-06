@@ -11,7 +11,7 @@ export default function CTA() {
           negocio al <span className="italic gold-text">siguiente nivel</span>?
         </h2>
         <p className="cta-sub">
-          Una reunión de 30 minutos. Te mostramos cómo automatizar tu atención y multiplicar tus leads. Sin costo. Sin compromiso.
+          Una reunión de 30 minutos. Te mostramos cómo un chatbot de IA en WhatsApp puede automatizar tu atención y multiplicar tus leads. Sin costo. Sin compromiso.
         </p>
         <a href={WA_LINK} className="btn btn-primary cta-btn" target="_blank" rel="noopener noreferrer">
           Agendar reunión

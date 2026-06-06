@@ -41,11 +41,11 @@ export default function Results() {
           <div>
             <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>02 · Resultados</span>
             <h2 style={{ marginTop: "18px" }}>
-              Lo que <span className="serif" style={{ fontStyle: "italic" }}>prometemos</span>
-              <br />y entregamos.
+              Lo que la IA<br />
+              <span className="serif" style={{ fontStyle: "italic" }}>hace <span className="gold-text">posible</span>.</span>
             </h2>
           </div>
-          <p className="lead">Métricas reales de los negocios que confiaron en Kosmo. Cada número es el resultado promedio luego de 60 días de operación.</p>
+          <p className="lead">Métricas reales de los negocios que automatizaron con Kosmo. Cada número es el resultado promedio luego de 60 días de operación.</p>
         </div>
 
         <div className="results-grid">

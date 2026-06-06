@@ -47,11 +47,11 @@ export default function Services() {
           <div>
             <span className="eyebrow" style={{ marginBottom: "24px", display: "inline-flex" }}>01 · Qué Hacemos</span>
             <h2 style={{ marginTop: "18px" }}>
-              Lo que hace<br />
-              <span className="serif" style={{ fontStyle: "italic" }}>que <span className="gold-text">funcione</span>.</span>
+              Automatización<br />
+              <span className="serif" style={{ fontStyle: "italic" }}>que <span className="gold-text">funciona</span>.</span>
             </h2>
           </div>
-          <p className="lead">Combinamos diseño de alta conversión con IA aplicada para que tu negocio trabaje solo — incluso cuando vos no estás.</p>
+          <p className="lead">IA aplicada y diseño de alta conversión para que tu negocio trabaje solo — incluso cuando vos no estás.</p>
         </div>
 
         <div className="services-grid reveal-stagger">

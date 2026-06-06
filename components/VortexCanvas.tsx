@@ -8,13 +8,15 @@ export default function VortexCanvas() {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d")!;
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     let W = 0, H = 0, cx = 0, cy = 0, dpr = 1;
-    let stars: {x:number;y:number;z:number;r:number;tw:number;twS:number;hue:number}[] = [];
-    let particles: {angle:number;radius:number;baseRadius:number;speed:number;size:number;life:number;wobble:number}[] = [];
+    let stars: { x: number; y: number; z: number; r: number; tw: number; twS: number; hue: number }[] = [];
+    let particles: { angle: number; radius: number; baseRadius: number; speed: number; size: number; life: number; wobble: number }[] = [];
     let mouseX = 0, mouseY = 0, targetMX = 0, targetMY = 0;
     let t = 0;
     let rafId: number;
+    let paused = false;
 
     function resize() {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -49,7 +51,7 @@ export default function VortexCanvas() {
 
     function initParticles() {
       particles = [];
-      const count = 280;
+      const count = Math.min(280, Math.floor((W * H) / 6000));
       for (let i = 0; i < count; i++) {
         const angle = Math.random() * Math.PI * 2;
         const radius = 100 + Math.random() * 280;
@@ -65,7 +67,54 @@ export default function VortexCanvas() {
       }
     }
 
+    function drawBackground() {
+      ctx.fillStyle = "rgba(5, 5, 7, 1)";
+      ctx.fillRect(0, 0, W, H);
+      const nebGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * 0.7);
+      nebGrad.addColorStop(0, "rgba(232, 197, 102, 0.06)");
+      nebGrad.addColorStop(0.3, "rgba(80, 40, 100, 0.04)");
+      nebGrad.addColorStop(0.6, "rgba(20, 20, 40, 0.02)");
+      nebGrad.addColorStop(1, "rgba(0, 0, 0, 0)");
+      ctx.fillStyle = nebGrad;
+      ctx.fillRect(0, 0, W, H);
+    }
+
+    function drawStarsStatic() {
+      for (const s of stars) {
+        const a = 0.5 * s.z;
+        ctx.fillStyle = s.hue === 1
+          ? `rgba(255, 220, 130, ${a * 0.95})`
+          : `rgba(245, 243, 238, ${a})`;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function drawStatic() {
+      drawBackground();
+      drawStarsStatic();
+      const haloGrad = ctx.createRadialGradient(cx, cy, 60, cx, cy, 380);
+      haloGrad.addColorStop(0, "rgba(255, 220, 130, 0.0)");
+      haloGrad.addColorStop(0.15, "rgba(232, 197, 102, 0.14)");
+      haloGrad.addColorStop(0.4, "rgba(232, 197, 102, 0.05)");
+      haloGrad.addColorStop(1, "rgba(0, 0, 0, 0)");
+      ctx.fillStyle = haloGrad;
+      ctx.beginPath();
+      ctx.arc(cx, cy, 380, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.strokeStyle = "rgba(255, 224, 138, 0.4)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, 110, 110 * 0.32, 0, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
     function draw() {
+      if (paused) return;
       t += 0.005;
       mouseX += (targetMX - mouseX) * 0.05;
       mouseY += (targetMY - mouseY) * 0.05;
@@ -190,19 +239,37 @@ export default function VortexCanvas() {
       rafId = requestAnimationFrame(draw);
     }
 
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        paused = true;
+        cancelAnimationFrame(rafId);
+      } else {
+        paused = false;
+        draw();
+      }
+    };
+
     const onMouseMove = (e: MouseEvent) => { targetMX = e.clientX; targetMY = e.clientY; };
+
     window.addEventListener("resize", resize);
-    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     resize();
     targetMX = mouseX = cx;
     targetMY = mouseY = cy;
-    draw();
+
+    if (prefersReduced) {
+      drawStatic();
+    } else {
+      draw();
+    }
 
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, []);
 
