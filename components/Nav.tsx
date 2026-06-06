@@ -21,8 +21,7 @@ export default function Nav() {
       <div className="nav-links">
         <a href="#servicios">Servicios</a>
         <a href="#resultados">Resultados</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#resenas">Reseñas</a>
+<a href="#resenas">Reseñas</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>
